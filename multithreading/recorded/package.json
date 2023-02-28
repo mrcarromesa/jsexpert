@@ -1,0 +1,16 @@
+{
+  "name": "multithreading",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npx browser-sync -w",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.27.12"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
