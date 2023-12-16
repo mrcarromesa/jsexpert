@@ -1,0 +1,74 @@
+// padrao do cpf
+// ^\d{3}.\d{3}.\d{3}-\d{2}$
+
+123.123.123-14
+321.123.345-20
+200.300.500.19
+
+// remover os pontos e traços [.-]
+
+// cada letra:
+// \w
+// palvara:
+// \w+
+
+// espaço em branco
+// \s
+
+// separar em grupo:
+// (__expressao_aqui__)
+// Iniciar:
+// ^
+// finalizar:
+// $
+
+// Exemplo:
+// Transformar um dado em um JSON
+
+Wendel, Erick
+Gomes, Laila
+Johnson, Jose
+
+// No vscode podemos fazer isso:
+// find por: ^(\w+),\s(\w+)$
+// replace por: {firstName: "$2", lastName: "$1"}
+
+// Resultado:
+{firstName: "Erick", lastName: "Wendel"}
+{firstName: "Laila", lastName: "Gomes"}
+{firstName: "Jose", lastName: "Johnson"}
+
+// flags:
+// g => global => retorna toda vez que encontrar o padrão
+// m => multi line => buscar em mais de uma linha 
+
+// Non-greedy: não ganancioso, busca correspondencia com o menor número possível de caracters
+// .*?
+
+
+// Exemplo 2
+
+
+O [Eric Wendel](https://erickwendel.com) faz palestras e você devia 
+segui-lo no [Twitter](http://twitter.com/erickwendel_) ou até no 
+[Instagram](https://instagram.com/reickwendel_)
+
+Ah e pode pesquisar no [Google](https://google.com) ou
+[Yahoo](https://yahoo.com)
+
+vai que vai!
+
+// aplicar replace: \[(.*?)\]\(([http|https].*?)\)
+
+// Resultado:
+
+O <a href="https://erickwendel.com">Eric Wendel</a> faz palestras e você devia 
+segui-lo no <a href="http://twitter.com/erickwendel_">Twitter</a> ou até no 
+<a href="https://instagram.com/reickwendel_">Instagram</a>
+
+Ah e pode pesquisar no <a href="https://google.com">Google</a> ou
+<a href="https://yahoo.com">Yahoo</a>
+
+vai que vai!
+
+----

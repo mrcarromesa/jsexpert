@@ -1,0 +1,5 @@
+setBreakpoint(16)
+cont
+exec req
+exec req.url
+exec new URLSearchParams(req.url).get('/?salary')

@@ -1,0 +1,5 @@
+[duplex writable] This-is-my
+[duplex writable] Custom-readable
+[writable] wholeString This-is-my,Custom-readable
+[writable] bytesRead 25
+process has finished!

@@ -1,0 +1,9 @@
+time node index.js
+
+// com esse comando obtemos informação de quanto tempo levou a execução e quanto de CPU foi gasto
+
+docker run -p "8080:80" -d nginx
+
+(?<containerId>\w+)\W+(?=nginx)
+
+npm config set init.author.name "my name"

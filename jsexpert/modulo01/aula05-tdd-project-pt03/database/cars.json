@@ -1,0 +1,23 @@
+[
+  {
+    "id": "4ee1c9c8-348a-4837-8602-7d4388e058e4",
+    "name": "Civic",
+    "releaseYear": 2023,
+    "available": true,
+    "gasAvailable": true
+  },
+  {
+    "id": "581ef503-1bf7-41ef-af44-854571e1d03b",
+    "name": "Model T",
+    "releaseYear": 2022,
+    "available": true,
+    "gasAvailable": true
+  },
+  {
+    "id": "9ac755a5-5871-4e99-9c2a-c492b4e4875a",
+    "name": "911",
+    "releaseYear": 2022,
+    "available": true,
+    "gasAvailable": true
+  }
+]
